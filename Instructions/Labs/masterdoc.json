@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Agentic AI Immersion Workshop",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabsAI-Azure/agentic-ai-immersion",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-ai-immersion/refs/heads/main/Instructions/Labs/Getting-Started.md",
+        "Order": 1
+      }
+    ]
+  }
+]
