@@ -10,7 +10,7 @@ In this exercise, you will complete the following tasks:
 
 - Task 1: Agent Creation Patterns 
 - Task 2: Context Providers & Middleware
-- Task 3: Threads & Observability 
+- Task 3: Observability & Threads
 - Task 4: Multi-Agent Workflows 
 
 ## Task 1: Agent Creation Patterns
@@ -213,6 +213,160 @@ In this exercise, you will complete the following tasks:
 
 1. Open `agent-framework/middleware/4-decorator-middleware.ipynb`
 
-1. 
+1. This notebook demonstrates how to implement Decorator-Based Middleware for an Azure AI Portfolio Rebalancing Agent using the @agent_middleware and @function_middleware decorators. You'll learn how to simplify middleware development while applying trading validations and logging to support portfolio management workflows.
 
-   
+   - Implement middleware using the @agent_middleware and @function_middleware decorators.
+   - Simplify middleware development with cleaner, decorator-based syntax.
+   - Validate trading requests before portfolio operations are executed.
+   - Log portfolio changes during agent execution.
+   - Build a portfolio rebalancing agent using production-ready middleware patterns.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build your Portfolio Rebalancing Agent using Decorator-Based Middleware.
+
+1. After running all the cells in the notebook, you will have successfully built a Portfolio Rebalancing Agent that can:
+
+   - Implement middleware using @agent_middleware and @function_middleware decorators.
+   - Validate trading requests by enforcing trading window checks.
+   - Log portfolio updates and middleware activity during agent execution.
+   - Simplify middleware implementation through automatic context injection.
+   - Apply clean, production-ready middleware patterns for portfolio management scenarios.
+
+### **`agent-framework/middleware/7-middleware-termination.ipynb`**
+
+1. Open `agent-framework/middleware/7-middleware-termination.ipynb`
+
+1. This notebook demonstrates how to implement Middleware Termination in an Azure AI Transaction Compliance Agent. You'll learn how middleware can terminate the execution pipeline early to enforce compliance rules, block prohibited transactions, and return immediate responses when policy conditions are met.
+
+   - Understand how middleware can terminate the agent execution pipeline.
+   - Implement pre-termination logic to block prohibited transaction requests.
+   - Apply post-termination logic for scenarios such as rate limiting.
+   - Return immediate compliance responses using short-circuit middleware.
+   - Build a transaction compliance agent using production-ready middleware patterns.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build your Transaction Compliance Agent with Middleware Termination.
+
+1. After running all the cells in the notebook, you will have successfully built a Transaction Compliance Agent that can:
+
+   - Terminate the middleware pipeline to enforce compliance policies.
+   - Block prohibited transactions before agent execution.
+   - Apply rate limiting and short-circuit responses when required.
+   - Return immediate compliance decisions without invoking the agent.
+   - Demonstrate production-ready middleware termination patterns for financial services applications.
+
+## Task 3: Observability & Threads
+
+### **`agent-framework/observability/1-agent-with-foundry-tracing.ipynb`**
+
+1. Open `agent-framework/observability/1-agent-with-foundry-tracing.ipynb`
+
+1. This notebook demonstrates how to implement Observability for an Azure AI Agent using Azure AI Foundry Tracing. You'll learn how to configure telemetry, collect traces, and monitor agent execution with Application Insights, enabling end-to-end visibility into agent performance and operations.
+
+   - Configure Azure AI Foundry Tracing for AI agents.
+   - Integrate Application Insights to collect telemetry and diagnostics.
+   - Capture trace IDs to monitor agent requests across distributed systems.
+   - Monitor agent execution and performance using live metrics and traces.
+   - Build an observable AI agent using production-ready monitoring practices.
+
+1. Create the Application Insights connection within your Microsoft Foundry resource.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build your Azure AI Agent with Foundry Tracing for observability.
+
+1. After running all the cells in the notebook, you will have successfully built an Observable Azure AI Agent that can:
+
+   - Collect telemetry and traces using Azure AI Foundry Tracing.
+   - Monitor agent performance with Application Insights.
+   - Track requests end-to-end using trace IDs for distributed diagnostics.
+   - Observe agent execution through live metrics and telemetry data.
+   - Implement production-ready observability practices for AI applications.
+
+1. View Traces in Azure Portal:
+
+   - Go to Azure Portal > Application Insights
+   - Select Investigate > Search
+   - Filter by the Trace ID shown above
+
+### **`agent-framework/observability/2-azure-ai-agent-observability.ipynb`**
+
+1. Open `agent-framework/observability/2-azure-ai-agent-observability.ipynb`
+
+1. This notebook demonstrates how to implement Observability for an Azure AI Agent using the AzureAIClient. You'll learn how to enable automatic tracing, capture span context, and integrate with Application Insights to monitor agent interactions and diagnose application behavior.
+
+   - Configure observability for Azure AI agents using the AzureAIClient.
+   - Enable automatic tracing to capture agent execution details.
+   - Track conversation flow using distributed trace spans and span context.
+   - Integrate with Application Insights for centralized monitoring and diagnostics.
+   - Build observable AI applications using production-ready monitoring practices.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build an Observable Azure AI Customer Service Agent using the AzureAIClient.
+
+1. After running all the cells in the notebook, you will have successfully built an Observable Azure AI Customer Service Agent that can:
+
+   - Enable automatic tracing for AI agent interactions.
+   - Track conversation flow using distributed trace spans and span context.
+   - Send telemetry and diagnostics to Application Insights for centralized monitoring.
+   - Monitor agent execution to support troubleshooting and performance analysis.
+   - Implement production-ready observability practices for AI-powered customer service applications.
+
+1. View Traces in Azure Portal:
+
+   - Go to Azure Portal > Application Insights
+   - Select Investigate > Search
+   - Filter by the Trace ID shown above
+  
+### **`agent-framework/threads/1-custom-chat-message-store-thread.ipynb`**
+
+1. Open `agent-framework/threads/1-custom-chat-message-store-thread.ipynb`
+
+1. This notebook demonstrates how to implement a Custom Chat Message Store for managing conversation threads in an Azure AI Agent. You'll learn how to store, serialize, and manage conversation history using custom storage backends to support compliance, auditing, and enterprise data governance requirements.
+
+   - Create and configure a custom chat message store for conversation threads.
+   - Store and serialize complete conversation histories for auditing.
+   - Integrate custom storage backends to meet enterprise data requirements.
+   - Manage conversation persistence while supporting data residency and retention policies.
+   - Build compliance-ready AI applications using production-grade conversation management patte
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build an Azure AI Agent with a Custom Chat Message Store.
+
+1. After running all the cells in the notebook, you will have successfully built an Azure AI Agent that can:
+
+   - Persist conversation threads using a custom Chat Message Store.
+   - Create thread-specific storage instances using a chat_message_store_factory.
+   - Serialize and deserialize conversation history for long-term persistence and auditability.
+   - Integrate custom storage backends to support enterprise compliance and governance requirements.
+   - Demonstrate production-ready thread management for secure, compliant AI applications.
+
+### **`agent-framework/threads/3-suspend-resume-thread.ipynb`**
+
+1. Open `agent-framework/threads/3-suspend-resume-thread.ipynb`
+
+1. This notebook demonstrates how to suspend and resume conversation threads in Azure AI Agents, comparing service-managed threads with in-memory threads. You'll learn how to persist conversation state, resume interactions across sessions, and support seamless user experiences for long-running workflows.
+
+   - Understand the differences between service-managed and in-memory conversation threads.
+   - Suspend and resume conversation threads while preserving context.
+   - Manage persistent conversation state across multiple sessions.
+   - Support multi-device conversation continuity using Azure AI Agents.
+   - Build production-ready thread management for long-running AI workflows.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build an Azure AI Agent with Suspend and Resume Conversation Threads.
+
+1. After running all the cells in the notebook, you will have successfully built an Azure AI Agent that can:
+
+   - Suspend and resume conversation threads while preserving conversation context.
+   - Compare service-managed and in-memory thread management approaches.
+   - Persist conversations across user sessions for long-running workflows.
+   - Support conversation continuity across multiple devices and sessions.
+   - Implement production-ready thread lifecycle management for enterprise AI applications.
+  
+## Task 4: Multi-Agent Workflows 
