@@ -135,16 +135,84 @@ In this exercise, you will complete the following tasks:
    - Manage document resources, including file uploads and vector stores, using production-ready practices.
    - Deliver intelligent document search and Q&A while following responsible AI and financial best practices.
 
+## Task 2: Context Providers & Middleware
 
+### **`agent-framework/context-providers/1-simple-context-provider.ipynb`**
 
+1. Open `agent-framework/context-providers/1-simple-context-provider.ipynb`.
 
+1. This notebook demonstrates how to build a Customer KYC Agent using a Simple Context Provider with the AzureAIProjectAgentProvider. You'll learn how to maintain conversation state, collect and manage customer profile information, and provide dynamic context to the agent to support Know Your Customer (KYC) compliance workflows.
 
+   - Create and implement a custom ContextProvider class.
+   - Extract structured customer information from conversations.
+   - Provide dynamic context to the agent based on collected customer data.
+   - Maintain conversation state across multiple interactions.
+   - Build a KYC-focused AI agent while following responsible AI and data privacy best practices.
+  
+1. Select the Python Kernel
 
+1. Run all the cells individually to set up and build your Customer KYC Agent using a Simple Context Provider.
 
+1. After running all the cells in the notebook, you will have successfully built a Customer KYC Agent that can:
 
+   - Collect and maintain customer profile information throughout a conversation.
+   - Provide dynamic context to the agent before each response using a custom Context Provider.
+   - Extract and persist structured customer data after each interaction.
+   - Support multi-turn KYC workflows with stateful conversation management.
+   - Demonstrate production-ready context management for customer onboarding and compliance scenarios.
 
+### `agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`
 
+1. Open `agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`
 
+1. This notebook demonstrates how to build a Loan Underwriting Agent using Azure AI Search with Agentic Mode for Retrieval-Augmented Generation (RAG). You'll learn how to create a knowledge base, enable multi-hop reasoning, and retrieve underwriting guidance to support complex loan eligibility and risk assessment scenarios.
 
+   - Configure the AzureAISearchContextProvider with Agentic Mode.
+   - Create and use a Knowledge Base for underwriting policy documents.
+   - Perform multi-hop reasoning across underwriting guidelines and eligibility criteria.
+   - Answer complex loan underwriting and risk assessment questions using AI Search.
+   - Build a knowledge-grounded underwriting agent while following responsible AI and financial best practices.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build your Loan Underwriting Agent using Azure AI Search with Agentic Mode.
+
+1. After running all the cells in the notebook, you will have successfully built a Loan Underwriting Agent that can:
+
+   - Retrieve underwriting policies and eligibility criteria using Azure AI Search.
+   - Perform multi-hop reasoning across multiple knowledge sources with Agentic Mode.
+   - Answer complex loan eligibility, DTI, LTV, and documentation-related questions.
+   - Leverage a knowledge base to provide grounded, context-aware underwriting guidance.
+   - Demonstrate intelligent RAG patterns for loan underwriting while following responsible AI practices.
+
+### **`agent-framework/middleware/1-agent-and-run-level-middleware.ipynb`**
+
+1. Open `agent-framework/middleware/1-agent-and-run-level-middleware.ipynb`
+
+1. This notebook demonstrates how to implement Agent-Level and Run-Level Middleware using an Azure AI Agent in a Transaction Compliance Monitoring scenario. You'll learn how middleware can be applied at different stages of agent execution to support security, monitoring, auditing, priority handling, and caching for financial services applications.
+
+   - Understand the differences between Agent-Level and Run-Level middleware.
+   - Configure middleware to handle security validation, audit logging, and performance monitoring.
+   - Apply Run-Level middleware for priority handling, debugging, and caching.
+   - Explore middleware execution order during agent processing.
+   - Build a transaction compliance monitoring solution using production-ready middleware patterns.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build your Transaction Compliance Monitoring Agent with Agent-Level and Run-Level Middleware.
+
+1. After running all the cells in the notebook, you will have successfully built a Transaction Compliance Monitoring Agent that can:
+
+   - Apply Agent-Level Middleware for security validation, performance monitoring, and audit logging.
+   - Apply Run-Level Middleware for request-specific behaviors such as priority handling and caching.
+   - Process transactions using a layered middleware execution pipeline.
+   - Monitor and manage compliance workflows using production-ready middleware patterns.
+   - Demonstrate flexible middleware design for secure and compliant financial services applications.
+
+### **`agent-framework/middleware/4-decorator-middleware.ipynb`**
+
+1. Open `agent-framework/middleware/4-decorator-middleware.ipynb`
+
+1. 
 
    
