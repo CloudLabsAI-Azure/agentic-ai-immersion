@@ -1,4 +1,4 @@
-# Exercise 01: Microsoft Agent Framework - Business Agents & Multi-Agent Workflows
+# Exercise 02: Microsoft Agent Framework - Business Agents & Multi-Agent Workflows
 
 ## Scenario
 
@@ -370,3 +370,91 @@ In this exercise, you will complete the following tasks:
    - Implement production-ready thread lifecycle management for enterprise AI applications.
   
 ## Task 4: Multi-Agent Workflows 
+
+### **`agent-framework/workflows/1-azure-ai-agents-streaming.ipynb`**
+
+1. Open `agent-framework/workflows/1-azure-ai-agents-streaming.ipynb`
+
+1. This notebook demonstrates how to build a Streaming Multi-Agent Workflow using Azure AI Agent Service. You'll learn how to orchestrate specialized agents that process a credit card application while streaming responses in real time, enabling users to observe the workflow as each agent completes its analysis.
+
+   - Build a streaming workflow using Azure AI Agent Service.
+   - Register and orchestrate multiple AI agents within a workflow.
+   - Stream agent responses in real time using AgentRunUpdateEvent.
+   - Process credit card applications through credit analysis and underwriting stages.
+   - Build production-ready streaming workflows using Azure AI agent orchestration patterns.
+     
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build a Streaming Credit Card Application Review Workflow.
+
+1. After running all the cells in the notebook, you will have successfully built a Streaming Credit Card Application Review Workflow that can:
+
+   - Orchestrate multiple AI agents to process credit card applications.
+   - Stream agent responses in real time throughout the workflow.
+   - Perform credit analysis followed by underwriting decisions.
+   - Monitor workflow progress as each agent completes its task.
+   - Demonstrate production-ready streaming orchestration patterns for financial services applications.
+  
+### **`agent-framework/workflows/5-credit-limit-with-human-input.ipynb`**
+
+1. Open `agent-framework/workflows/5-credit-limit-with-human-input.ipynb`
+
+1. This notebook demonstrates how to build a Human-in-the-Loop (HITL) Workflow using Azure AI Agents for credit limit review. You'll learn how to combine AI-driven recommendations with human decision-making, enabling managers to review, approve, modify, or reject proposed credit limit adjustments before a final decision is made.
+
+   - Build a Human-in-the-Loop workflow using Azure AI Agents.
+   - Pause workflow execution to collect human input using RequestInfoExecutor.
+   - Coordinate AI and human interactions through request and response correlation.
+   - Enforce structured outputs using JSON schemas.
+   - Build production-ready approval workflows for financial services applications.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build a Human-in-the-Loop Credit Limit Review Workflow.
+
+1. After running all the cells in the notebook, you will have successfully built a Human-in-the-Loop Credit Limit Review Workflow that can:
+
+   - Orchestrate AI and human collaboration for credit limit decisions.
+   - Pause workflow execution to request and process human approvals.
+   - Support iterative review cycles until a final decision is reached.
+   - Generate structured responses for consistent approval workflows.
+   - Demonstrate production-ready human-in-the-loop orchestration patterns for financial services.
+
+### **`agent-framework/workflows/7-magentic-compliance-review-with-human-input.ipynb`**
+
+1. Open `agent-framework/workflows/7-magentic-compliance-review-with-human-input.ipynb`
+
+1. This notebook demonstrates how to build a Magentic Multi-Agent Workflow with Plan Review using Azure AI Agents. You'll learn how to incorporate human compliance review into AI-generated execution plans, enabling collaborative workflows that meet governance, regulatory, and quality assurance requirements before execution.
+
+   - Build a Magentic workflow with interactive Plan Review.
+   - Enable human review and approval of AI-generated execution plans.
+   - Modify workflow plans using compliance feedback before execution.
+   - Coordinate AI and human collaboration through plan review events.
+   - Build production-ready, governance-aware multi-agent workflows for financial services.
+
+1. Select the Python Kernel
+
+1. Run all the cells individually to set up and build a Compliance-Reviewed Investment Research Workflow using Magentic Plan Review.
+
+1. After running all the cells in the notebook, you will have successfully built a Compliance-Reviewed Investment Research Workflow that can:
+
+   - Generate AI-driven research plans for investment analysis.
+   - Pause workflow execution for human compliance review before plan execution.
+   - Support plan approval or revision based on reviewer feedback.
+   - Resume execution with an approved or updated research plan.
+   - Demonstrate production-ready Magentic orchestration patterns with human oversight and governance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
