@@ -23,6 +23,8 @@ The **Microsoft Agent Framework** is an open-source SDK for building AI agents a
 
 1. Open `agent-framework/agents/azure-ai-agents/1-azure-ai-basic.ipynb`.
 
+   ![](../../images/agent-framework-agents-azure-ai-agents-1-azure-ai-basic.png)
+
 1. This notebook demonstrates the fundamentals of building an **Azure AI Agent** using the `AzureAIProjectAgentProvider`. You'll learn how to create an agent with function tools, interact with it using streaming and non-streaming responses, and manage agent resources using asynchronous programming patterns.
 
    - Set up and configure the `AzureAIProjectAgentProvider`.
@@ -49,6 +51,8 @@ The **Microsoft Agent Framework** is an open-source SDK for building AI agents a
 
 1. Open `agent-framework/agents/azure-ai-agents/2-azure-ai-with-explicit-settings.ipynb`.
 
+   ![](../../images/agent-framework-agents-azure-ai-agents-2-azure-ai-with-explicit-settings.png)
+
 1. This notebook demonstrates how to create an **Azure AI Investment Advisor Agent** using **explicit** configuration instead of relying on environment variable defaults. You'll learn how to configure the Azure AI client, project endpoint, and model deployment programmatically, providing greater control for production, governance, and compliance scenarios.
 
    - Configure Azure AI client settings using explicit parameters.
@@ -74,6 +78,8 @@ The **Microsoft Agent Framework** is an open-source SDK for building AI agents a
 ### **`agent-framework/agents/azure-ai-agents/4-azure-ai-with-function-tools.ipynb`**
 
 1. Open `agent-framework/agents/azure-ai-agents/4-azure-ai-with-function-tools.ipynb`
+
+   ![](../../images/agent-framework-agents-azure-ai-agents-4-azure-ai-with-function-tools.png)
 
 1. This notebook demonstrates how to build an **Azure AI Banking Agent with Function Tools** using the `AzureAIProjectAgentProvider`. You'll learn how to integrate custom functions for banking operations, configure tools at both the agent and run levels, and enable the agent to coordinate multiple functions to handle financial assistance scenarios.
 
@@ -103,6 +109,8 @@ The **Microsoft Agent Framework** is an open-source SDK for building AI agents a
 
 1. Open `agent-framework/agents/azure-ai-agents/5-azure-ai-with-code-interpreter.ipynb`
 
+   ![](../../images/agent-framework-agents-azure-ai-agents-5-azure-ai-with-code-interpreter.png)
+
 1. This notebook demonstrates how to build an **Azure AI Financial Analytics Agent** using the **Hosted Code Interpreter Tool** with the `AzureAIProjectAgentProvider`. You'll learn how to enable the agent to execute Python code for financial calculations, analyze investment data, and generate insights for common financial scenarios.
 
    - Configure and integrate the Hosted Code Interpreter Tool with an Azure AI agent.
@@ -128,6 +136,8 @@ The **Microsoft Agent Framework** is an open-source SDK for building AI agents a
 ### **`agent-framework/agents/azure-ai-agents/6-azure-ai-with-file-search.ipynb`**
 
 1. Open `agent-framework/agents/azure-ai-agents/6-azure-ai-with-file-search.ipynb`
+
+   ![](../../images/agent-framework-agents-azure-ai-agents-6-azure-ai-with-file-search.png)
 
 1. This notebook demonstrates how to build an **Azure AI Financial Document Search Agent** using the `AzureAIProjectAgentProvider` with **File Search** capabilities. You'll learn how to upload financial documents, create a vector store, configure file search, and enable the agent to answer questions using document-based knowledge.
 
@@ -165,6 +175,8 @@ Context providers observe the agent lifecycle and allow you to:
 
 1. Open `agent-framework/context-providers/1-simple-context-provider.ipynb`.
 
+   ![](../../images/agent-framework-context-providers-1-simple-context-provider.png)
+
 1. This notebook demonstrates how to build a **Customer KYC Agent** using a **Simple Context Provider** with the `AzureAIProjectAgentProvider`. You'll learn how to maintain conversation state, collect and manage customer profile information, and provide dynamic context to the agent to support Know Your Customer (KYC) compliance workflows.
 
    - Create and implement a custom `ContextProvider` class.
@@ -190,6 +202,8 @@ Context providers observe the agent lifecycle and allow you to:
 ### `agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`
 
 1. Open `agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`
+
+   ![](../../images/agent-framework-context-providers-2-azure-ai-search-context-agentic.png)
 
 1. This notebook demonstrates how to build a **Loan Underwriting Agent** using **Azure AI Search** with **Agentic Mode for Retrieval-Augmented Generation (RAG)**. You'll learn how to create a knowledge base, enable multi-hop reasoning, and retrieve underwriting guidance to support complex loan eligibility and risk assessment scenarios.
 
@@ -221,6 +235,8 @@ Context providers observe the agent lifecycle and allow you to:
 
 1. Open `agent-framework/middleware/1-agent-and-run-level-middleware.ipynb`
 
+   ![](../../images/agent-framework-middleware-1-agent-and-run-level-middleware.png)
+
 1. This notebook demonstrates how to implement **Agent-Level** and **Run-Level Middleware** using an **Azure AI Agent** in a **Transaction Compliance Monitoring** scenario. You'll learn how middleware can be applied at different stages of agent execution to support security, monitoring, auditing, priority handling, and caching for financial services applications.
 
    - Understand the differences between `Agent-Level` and `Run-Level` middleware.
@@ -247,6 +263,8 @@ Context providers observe the agent lifecycle and allow you to:
 
 1. Open `agent-framework/middleware/4-decorator-middleware.ipynb`
 
+   ![](../../images/agent-framework-middleware-4-decorator-middleware.png)
+
 1. This notebook demonstrates how to implement **Decorator-Based Middleware** for an **Azure AI Portfolio Rebalancing Agent** using the `@agent_middleware` and `@function_middleware` **decorators**. You'll learn how to simplify middleware development while applying trading validations and logging to support portfolio management workflows.
 
    - Implement middleware using the` @agent_middleware` and `@function_middleware` decorators.
@@ -272,6 +290,8 @@ Context providers observe the agent lifecycle and allow you to:
 ### **`agent-framework/middleware/7-middleware-termination.ipynb`**
 
 1. Open `agent-framework/middleware/7-middleware-termination.ipynb`
+
+   ![](../../images/agent-framework-middleware-7-middleware-termination.png)
 
 1. This notebook demonstrates how to implement **Middleware Termination** in an **Azure AI Transaction Compliance Agent**. You'll learn how middleware can terminate the execution pipeline early to enforce compliance rules, block prohibited transactions and return immediate responses when policy conditions are met.
 
@@ -304,6 +324,8 @@ Context providers observe the agent lifecycle and allow you to:
 ### **`agent-framework/observability/1-agent-with-foundry-tracing.ipynb`**
 
 1. Open `agent-framework/observability/1-agent-with-foundry-tracing.ipynb`
+
+   ![](../../images/agent-framework-observability-1-agent-with-foundry-tracing.png)
 
 1. This notebook demonstrates how to implement **Observability** for an **Azure AI Agent** using **Microsoft Foundry Tracing**. You'll learn how to configure telemetry, collect traces, and monitor agent execution with **Application Insights**, enabling end-to-end visibility into agent performance and operations.
 
@@ -338,6 +360,8 @@ Context providers observe the agent lifecycle and allow you to:
 ### **`agent-framework/observability/2-azure-ai-agent-observability.ipynb`**
 
 1. Open `agent-framework/observability/2-azure-ai-agent-observability.ipynb`
+
+   ![](../../images/agent-framework-observability-2-azure-ai-agent-observability.png)
 
 1. This notebook demonstrates how to implement **Observability** for an **Azure AI Agent**. You'll learn how to enable automatic tracing, capture span context, and integrate with Application Insights to monitor agent interactions and diagnose application behavior.
 
@@ -375,6 +399,8 @@ Context providers observe the agent lifecycle and allow you to:
 
 1. Open `agent-framework/threads/1-custom-chat-message-store-thread.ipynb`
 
+   ![](../../images/agent-framework-threads-1-custom-chat-message-store-thread.png)
+
 1. This notebook demonstrates how to implement a **Custom Chat Message Store** for managing conversation threads in an **Azure AI Agent**. You'll learn how to store, serialize, and manage conversation history using custom storage backends to support compliance, auditing, and enterprise data governance requirements.
 
    - Create and configure a custom chat message store for conversation threads.
@@ -400,6 +426,8 @@ Context providers observe the agent lifecycle and allow you to:
 ### **`agent-framework/threads/3-suspend-resume-thread.ipynb`**
 
 1. Open `agent-framework/threads/3-suspend-resume-thread.ipynb`
+
+   ![](../../images/agent-framework-threads-3-suspend-resume-thread.png)
 
 1. This notebook demonstrates how to **suspend and resume conversation threads** in **Azure AI Agents**, comparing service-managed threads with in-memory threads. You'll learn how to persist conversation state, resume interactions across sessions, and support seamless user experiences for long-running workflows.
 
@@ -433,6 +461,8 @@ Context providers observe the agent lifecycle and allow you to:
 
 1. Open `agent-framework/workflows/1-azure-ai-agents-streaming.ipynb`
 
+   ![](../../images/agent-framework-workflows-1-azure-ai-agents-streaming.png)
+
 1. This notebook demonstrates how to build a **Streaming Multi-Agent Workflow** using **Azure AI Agent Service**. You'll learn how to orchestrate specialized agents that process a credit card application while streaming responses in real time, enabling users to observe the workflow as each agent completes its analysis.
 
    - Build a streaming workflow using Azure AI Agent Service.
@@ -459,6 +489,8 @@ Context providers observe the agent lifecycle and allow you to:
 
 1. Open `agent-framework/workflows/5-credit-limit-with-human-input.ipynb`
 
+   ![](../../images/agent-framework-workflows-5-credit-limit-with-human-input.png)
+
 1. This notebook demonstrates how to build a **Human-in-the-Loop (HITL) Workflow** using **Azure AI Agents** for credit limit review. You'll learn how to combine AI-driven recommendations with human decision-making, enabling managers to review, approve, modify, or reject proposed credit limit adjustments before a final decision is made.
 
    - Build a Human-in-the-Loop workflow using Azure AI Agents.
@@ -484,6 +516,8 @@ Context providers observe the agent lifecycle and allow you to:
 ### **`agent-framework/workflows/7-magentic-compliance-review-with-human-input.ipynb`**
 
 1. Open `agent-framework/workflows/7-magentic-compliance-review-with-human-input.ipynb`
+
+   ![](../../images/agent-framework-workflows-7-magentic-compliance-review-with-human-input.png)
 
 1. This notebook demonstrates how to build a **Magentic Multi-Agent Workflow** with **Plan Review** using **Azure AI Agents**. You'll learn how to incorporate human compliance review into AI-generated execution plans, enabling collaborative workflows that meet governance, regulatory, and quality assurance requirements before execution.
 
