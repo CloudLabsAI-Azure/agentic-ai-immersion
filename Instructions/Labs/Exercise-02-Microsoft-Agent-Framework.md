@@ -199,7 +199,7 @@ Context providers observe the agent lifecycle and allow you to:
    - Support multi-turn KYC workflows with stateful conversation management.
    - Demonstrate production-ready context management for customer onboarding and compliance scenarios.
 
-### `agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`
+### **`agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`**
 
 1. Open `agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb`
 
