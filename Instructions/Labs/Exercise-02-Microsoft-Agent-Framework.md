@@ -15,6 +15,10 @@ In this exercise, you will complete the following tasks:
 
 ## Task 1: Agent Creation Patterns
 
+### 🧠 What is the Agent Framework?
+
+The **Microsoft Agent Framework** is an open-source SDK for building AI agents and multi-agent workflows. It combines ideas from Semantic Kernel and AutoGen into a unified foundation.
+
 ### **`agent-framework/agents/azure-ai-agents/1-azure-ai-basic.ipynb`**
 
 1. Open `agent-framework/agents/azure-ai-agents/1-azure-ai-basic.ipynb`.
@@ -137,6 +141,14 @@ In this exercise, you will complete the following tasks:
 
 ## Task 2: Context Providers & Middleware
 
+### 🧠 What are Context Providers?
+
+Context providers observe the agent lifecycle and allow you to:
+
+- **Inject Context** (`invoking()`) - Add instructions/context before each agent call
+- **Extract Information** (`invoked()`) - Capture data from conversations after each call
+- **Persist State** (`serialize()`) - Save context data for thread continuation
+
 ### **`agent-framework/context-providers/1-simple-context-provider.ipynb`**
 
 1. Open `agent-framework/context-providers/1-simple-context-provider.ipynb`.
@@ -184,6 +196,10 @@ In this exercise, you will complete the following tasks:
    - Answer complex loan eligibility, DTI, LTV, and documentation-related questions.
    - Leverage a knowledge base to provide grounded, context-aware underwriting guidance.
    - Demonstrate intelligent RAG patterns for loan underwriting while following responsible AI practices.
+
+### 🧠 What is Middleware?
+
+**Middleware** allows you to intercept and modify behavior at different execution stages—agent runs, function calls, and chat interactions. It's essential for building robust AI applications with logging, security, error handling, and compliance.
 
 ### **`agent-framework/middleware/1-agent-and-run-level-middleware.ipynb`**
 
@@ -259,6 +275,10 @@ In this exercise, you will complete the following tasks:
 
 ## Task 3: Observability & Threads
 
+### 🧠 What is Observability?
+
+**Observability** enables you to monitor, trace, and debug AI agent applications using OpenTelemetry and Azure Application Insights. It's essential for building robust AI systems with compliance, auditing, and performance monitoring requirements.
+
 ### **`agent-framework/observability/1-agent-with-foundry-tracing.ipynb`**
 
 1. Open `agent-framework/observability/1-agent-with-foundry-tracing.ipynb`
@@ -320,7 +340,11 @@ In this exercise, you will complete the following tasks:
    - Go to Azure Portal > Application Insights
    - Select Investigate > Search
    - Filter by the Trace ID shown above
-  
+
+### 🧠 What are Threads?
+
+**Threads** enable multi-turn conversations with AI agents by persisting conversation history across interactions. They support session persistence, serialization, and various storage backends for robust applications.
+
 ### **`agent-framework/threads/1-custom-chat-message-store-thread.ipynb`**
 
 1. Open `agent-framework/threads/1-custom-chat-message-store-thread.ipynb`
@@ -370,6 +394,10 @@ In this exercise, you will complete the following tasks:
    - Implement production-ready thread lifecycle management for enterprise AI applications.
   
 ## Task 4: Multi-Agent Workflows 
+
+### 🧠 What are Workflows?
+
+**Workflows** enable you to orchestrate multiple agents, executors, and human-in-the-loop interactions in complex business processes. They provide graph-based execution, streaming responses, and support for patterns like sequential processing, reflection, and multi-agent coordination.
 
 ### **`agent-framework/workflows/1-azure-ai-agents-streaming.ipynb`**
 
