@@ -140,27 +140,10 @@ In this exercise, you will complete the following tasks:
 
    ![](../../images/vsc-dotenv-agent-framework.png)
 
-1. Navigate to Azure portal, enter **Microsoft Foundry** in the search bar, and then select **Microsoft Foundry** from the search results.
-
-   ![](../../images/az-portal-search-foundry.png)
-
-1. In the left navigation pane, under **Use with Foundry**, select **Foundry**, and then choose your **Foundry** resource.
-
-   ![](../../images/az-portal-select-foundry.png)
-
-1. On the **Overview** page of your Foundry resource, select **Go to Foundry Portal** to open the Microsoft Foundry portal.
-
-   ![](../../images/go-to-foundry-portal.png)
-
-1. In the Microsoft Foundry portal, ensure you are in **Home** tab and copy the **API Key** value.
-
-   ![](../../images/foundry-api-key.png)
-
 1. In the `.env` file and update the following environment variables for **AZURE OPENAI DIRECT ACCESS**:
 
    ```
    AZURE_OPENAI_ENDPOINT=https://foundry-<inject key="DeploymentID"></inject>.openai.azure.com/openai/v1
-   AZURE_OPENAI_API_KEY=API_KEY_VALUE_COPIED_IN_THE_PREVIOUS_STEP
    ```
 
    ![](../../images/vsc-dotenv-azure-openai.png)
