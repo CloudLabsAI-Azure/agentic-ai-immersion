@@ -1,4 +1,4 @@
-# Exercise 03: Observability, Evaluation, Responsible AI & Hosted Deployment 
+# Exercise 03: Observability & Evaluation 
 
 ## Scenario
 
@@ -10,8 +10,6 @@ In this exercise, you will complete the following tasks:
 
 - Task 1: Telemetry & Monitoring 
 - Task 2: Agent & Tool Evaluation
-- Task 3: Red Team Security Testing 
-- Task 4: Deploying Hosted Agents
 
 ## Task 1: Telemetry & Monitoring 
 
@@ -125,120 +123,4 @@ In this exercise, you will complete the following tasks:
   
 1. Navigate to Foundry Portal > Evaluations, click on the Evaluation Run and view the results
 
-## Task 3: Red Team Security Testing 
 
-### **`observability-and-evaluations/5-red-team-security-testing.ipynb`**
-
-1. Open `observability-and-evaluations/5-red-team-security-testing.ipynb`
-
-1. This notebook demonstrates how to perform AI Red Team Security Testing on an Azure AI Foundry Agent using the AI Red Teaming Agent. You'll learn how to launch automated adversarial scans, evaluate agent safety across multiple risk categories, and analyze security results using the Attack Success Rate (ASR) metric.
-
-   - Understand AI red teaming concepts, including risk categories, attack strategies, and ASR.
-   - Create a target AI agent for automated security testing.
-   - Launch and monitor AI red-team scans using Azure AI Foundry.
-   - Analyze scan results to identify potential safety and security vulnerabilities.
-   - Build production-ready AI security validation workflows using red teaming.
-  
-1. Select the Python Kernel
-
-1. Run all the cells individually to set up, configure, and perform an AI Red Team Security Scan on your Banking Assistant Agent.
-
-1. After running all the cells in the notebook, you will have successfully performed an AI Red Team Security Assessment that can:
-
-   - Launch automated adversarial security scans against an AI agent.
-   - Evaluate agent behavior across multiple AI safety risk categories.
-   - Measure the Attack Success Rate (ASR) to assess agent robustness.
-   - Analyze security testing results to identify potential vulnerabilities.
-   - Demonstrate production-ready AI safety validation and security testing practices using Azure AI Foundry.
-  
-## Task 4: Deploying Hosted Agents
-
-1. Open the integrated terminal by selecting **Terminal → New Terminal**.
-
-   ![](../../images/vsc-terraform-lab-new-terminal.png)
-
-1. In the integrated terminal, verify that Python is installed by running the following command:
-
-   ```bash
-   python --version
-   ```
-
-1. Create and activate virtual environment
-
-   ```
-   python -m venv .venv
-   .\.venv\Scripts\activate
-   ```
-
-1. Test the agent locally. Each agent has a test_local.py that builds the agent and runs one turn against your project. They read the workshop root .env (or the agent-local .env).
-
-   ```
-   python hosted-agents/benefits-review-invocations/test_local.py
-   ```
-
-1. Navigate to directory
-
-   ```
-   cd hosted-agents/benefits-advisor-responses
-   ```
-
-1. Install the extension
-
-   ```
-   azd extension install azure.ai.agents
-   ```
-
-1. Authenticate to azd cli
-
-   ```
-   azd auth login
-   ```
-
-1. Initiate and deploy the AI Agent
-
-   ```
-   azd ai agent init
-   ```
-   ```
-   azd deploy
-   ```
-
-1. Click **Yes** on confirm installation prompt in the integrated terminal.
-
-1. Click **Yes** for `agent.manifest.yaml`
-
-1. Enter a name for your agent, click Enter
-
-   ```
-   benefits-advisor-responses
-   ```
-
-1. For your environemt name, enter
-
-   ```
-   benefits-advisor-responses
-   ```
-
-1. On how would you like to deploy your agent, choose **Source Code (ZIP)**
-
-1. Choose Python 3.14 for deployment
-
-1. File path choose main.py
-
-1. Choose remote build
-
-1. Choose an existing fundry resource
-
-1. Choose subs
-
-1. Choose the foundry resource/project
-
-1. Choose existing model deployment gpt-5.4-mini
-
-1. Choose 0.5 cores
-
-1. enter a value for skills name
-
-1. Enter a value for toolbox name
-
-1. Run azd deploy and confirm installation by click Yes
