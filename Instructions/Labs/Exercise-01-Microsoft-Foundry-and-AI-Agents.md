@@ -1,10 +1,16 @@
 # Exercise 01: Getting Started with Microsoft Foundry & AI Agents 
 
-## Scenario
+### Estimated Duration: 
 
-## Overview
+## 📘 Scenario
 
-## Objectives
+Contoso Financial Services is exploring **Microsoft Foundry** and **Agentic AI** to modernize its financial services operations. In this lab, you will build AI agents for common financial scenarios and explore how agents can use tools, enterprise data, and knowledge sources to provide intelligent, grounded assistance.
+
+## 📖 Overview
+
+In this exercise, you will use **Microsoft Foundry** to build and explore financial services AI agents using capabilities such as **Code Interpreter**, **File Search**, **Web Search**, **Azure AI Search**, **MCP tools** and **Foundry IQ**. You will create agents for financial advisory, loan calculations, document search, market research, banking product discovery, and fraud investigation while learning how these capabilities extend agents with specialized tools and enterprise knowledge.
+
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -427,3 +433,14 @@ In this exercise, you will complete the following tasks:
    - Generate knowledge-grounded responses for fraud investigation scenarios.
    - Leverage vector-enabled search indexes for intelligent information retrieval.
    - Combine Microsoft Foundry IQ and AI Agents to deliver context-aware fraud analysis and investigation support.
+
+## 🧾 Summary
+
+By completing this exercise, you will have:
+
+- Set up and connected your development environment to **Microsoft Foundry**.
+- Built multiple AI agents for common **financial services scenarios**.
+- Explored agent capabilities including **Code Interpreter**, **File Search**, **Web Search** and **Azure AI Search**.
+- Integrated **MCP tools** to extend agent capabilities through standardized tool access.
+- Used **Foundry IQ** to connect agents to multiple enterprise knowledge sources.
+- Experienced how Microsoft Foundry brings together **AI agents**, **tools**, **enterprise search** and **knowledge grounding** to build Agentic AI solutions.
