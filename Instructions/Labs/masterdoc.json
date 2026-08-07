@@ -15,6 +15,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-ai-immersion/refs/heads/main/Instructions/Labs/Exercise-02-Microsoft-Agent-Framework.md",
         "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-ai-immersion/refs/heads/main/Instructions/Labs/Exercise-03-Observability-Evaluation-Responsible-AI-Hosted-Deployment.md",
+        "Order": 4
       }
     ]
   }
