@@ -1,6 +1,6 @@
 # Exercise 01: Getting Started with Microsoft Foundry & AI Agents 
 
-### Estimated Duration: 
+### Estimated Duration: 120 Minutes
 
 ## 📘 Scenario
 
