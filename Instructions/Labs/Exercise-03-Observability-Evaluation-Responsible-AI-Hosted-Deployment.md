@@ -1,10 +1,16 @@
 # Exercise 03: Observability & Evaluation 
 
-## Scenario
+### Estimated Duration: 120 Minutes
 
-## Overview
+## 📘 Scenario
 
-## Objectives
+Contoso Financial Services is looking to improve the reliability, safety, and operational visibility of its AI agents before deploying them into production. In this exercise, Contoso will explore how **telemetry**, **tracing** and **AI evaluation** can be used to monitor agent behavior, assess response quality, and validate tool usage across financial services scenarios.
+
+## 📖 Overview
+
+In this exercise, you will use **Microsoft Foundry**, **Azure Monitor**, **OpenTelemetry** and **built-in evaluators** to monitor and evaluate AI agents. You will capture agent **telemetry and traces**, analyze agent responses for quality and safety, evaluate function tool usage, and measure tool call accuracy to support reliable and compliant Agentic AI solutions.
+
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -159,4 +165,13 @@ In this exercise, you will complete the following tasks:
 
    ![](../../images/evaluations-4-tool-call-accuracy-evaluation-evaluation-run-details.png)
 
+## 🧾 Summary
 
+By completing this exercise, you will have:
+
+- Implemented **telemetry and tracing** for a Wealth Management Advisory Agent.
+- Monitored agent interactions and business-specific operations using **Azure Monitor** and **Application Insights**.
+- Evaluated AI agent responses using **Microsoft Foundry built-in evaluators**.
+- Evaluated **function-enabled agents** for response quality and tool usage.
+- Measured **Tool Call Accuracy** to validate tool selection and parameters.
+- Experienced how **observability and evaluation** help improve the reliability, safety, compliance, and production readiness of Agentic AI solutions.
