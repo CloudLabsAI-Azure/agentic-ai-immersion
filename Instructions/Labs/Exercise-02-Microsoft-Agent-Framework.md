@@ -1,6 +1,6 @@
 # Exercise 02: Microsoft Agent Framework - Business Agents & Multi-Agent Workflows
 
-### Estimated Duration: 
+### Estimated Duration: 150 Minutes
 
 ## 📘 Scenario
 
