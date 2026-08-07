@@ -1,10 +1,16 @@
 # Exercise 02: Microsoft Agent Framework - Business Agents & Multi-Agent Workflows
 
-## Scenario
+### Estimated Duration: 
 
-## Overview
+## 📘 Scenario
 
-## Objectives
+Contoso Financial Services is exploring the **Microsoft Agent Framework** to build intelligent business agents and multi-agent workflows for its financial operations. In this exercise, Contoso will explore how agents can use function tools, context, middleware, observability, threads and workflow orchestration to support banking and financial services scenarios.
+
+## 📖 Overview
+
+In this exercise, you will use the **Microsoft Agent Framework** to build and orchestrate AI agents for financial services use cases. You will explore **agent creation patterns**, enhance agents with **context providers and middleware**, implement **observability and thread management**, and orchestrate multiple agents using **sequential**, **human-in-the-loop** and **Magentic workflows**.
+
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -563,7 +569,17 @@ Context providers observe the agent lifecycle and allow you to:
    - Resume execution with an approved or updated research plan.
    - Demonstrate production-ready Magentic orchestration patterns with human oversight and governance.
 
+## 🧾 Summary
 
+By completing this exercise, you will have:
+
+- Built and configured **Azure AI Agents** using the **Microsoft Agent Framework**.
+- Integrated **function tools** to support banking and financial operations.
+- Used **context providers and middleware** to manage agent context, security, compliance and execution behavior.
+- Implemented **observability and tracing** for monitoring and troubleshooting agent interactions.
+- Explored **thread management and conversation persistence** for business applications.
+- Orchestrated multiple agents using **sequential**, **human-in-the-loop** and **Magentic workflows**.
+- Experienced how the Microsoft Agent Framework enables scalable, observable and governed **multi-agent solutions** for financial services.
 
 
 
