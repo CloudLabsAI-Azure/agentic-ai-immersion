@@ -1,10 +1,16 @@
 # Exercise 04: Bring Your Own Use Case with GitHub Copilot
 
-## Scenario
+### Estimated Duration: 90 Minutes
 
-## Overview
+## 📘 Scenario
 
-## Objectives
+Contoso Financial Services wants to accelerate the development of AI-powered solutions tailored to its business needs while enabling developers to move quickly from an idea to a working Agentic AI solution. In this exercise, Contoso will explore how **GitHub Copilot** and **Microsoft Foundry** can be used to define, plan, scaffold, and build a financial services AI agent based on a real-world business use case.
+
+## 📖 Overview
+
+In this exercise, you will use **GitHub Copilot**, **Visual Studio Code** and **Microsoft Foundry** to bring a custom financial services use case to life. You will define an agent specification, generate an implementation plan using GitHub Copilot **Plan** mode, and use Copilot **Agent** mode to scaffold a **Loan Application Risk Reviewer Agent**. You will then run and explore the generated agent in Microsoft Foundry and review additional financial services use cases covered throughout the workshop.
+
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -374,3 +380,15 @@ This workshop features **57 real-world FSI use cases** across all notebooks, dem
 | Banking Assistant Evaluation | Evaluate tool-enabled agents for correct API usage | Azure AI Agents v2, Function Tools Evaluation | [3-agent-evaluation-with-function-tools.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/3-agent-evaluation-with-function-tools.ipynb) |
 | Banking Operations Tool Validation | Validate correct tool selection for banking operations | Azure AI Agents v2, Tool Call Accuracy | [4-tool-call-accuracy-evaluation.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/4-tool-call-accuracy-evaluation.ipynb) |
 | Banking AI Security Assessment | Identify vulnerabilities through adversarial attack simulations | Azure AI Agents v2, Red Team Testing | [5-red-team-security-testing.ipynb](https://github.com/dhangerkapil/agentic-ai-immersion/blob/main/observability-and-evaluations/5-red-team-security-testing.ipynb) |
+
+## 🧾 Summary
+
+By completing this exercise, you will have:
+
+- Defined a complete **Agentic AI use case specification** for a **Loan Application Risk Reviewer Agent**.
+- Generated an implementation plan using **GitHub Copilot Plan mode**.
+- Scaffolded a working AI agent using **GitHub Copilot Agent mode**.
+- Built a policy-based loan risk reviewer that calculates **FOIR**, **LTV** and **DSCR**.
+- Identified policy exceptions with **severity levels** and **clause references**.
+- Generated risk-based recommendations while following responsible decisioning practices.
+- Experienced how **GitHub Copilot** and **Microsoft Foundry** can accelerate the development of custom Agentic AI solutions for financial services.
