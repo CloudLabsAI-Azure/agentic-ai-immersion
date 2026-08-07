@@ -19,6 +19,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-ai-immersion/refs/heads/main/Instructions/Labs/Exercise-03-Observability-Evaluation-Responsible-AI-Hosted-Deployment.md",
         "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/agentic-ai-immersion/refs/heads/main/Instructions/Labs/Exercise-04-Bring-Your-Own-Use-Case-with-GitHub-Copilot.md",
+        "Order": 5
       }
     ]
   }
