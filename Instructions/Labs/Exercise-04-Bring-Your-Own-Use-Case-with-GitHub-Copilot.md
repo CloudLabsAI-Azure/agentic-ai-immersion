@@ -8,16 +8,129 @@
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Complete the Use Case Spec  
+- Task 1: Login to GitHub & Complete the Use Case Spec  
 - Task 2: Generate a Plan with GitHub Copilot 
 - Task 3: Scaffold the Agent with Copilot Agent Mode 
 - Task 4: Explore Use Cases
 
+## Task 1: Login to GitHub & Complete the Use Case Spec
 
+1. In the **Lab VM**, open the **Microsoft Edge** browser from the desktop.
 
+   ![](../../images/lab-vm-ms-edge.png)
 
+1. Navigate to the **GitHub login** page by copying and pasting the following URL into the address bar:
 
+   ```
+   https://github.com/login
+   ```
 
+1. On the **Sign in to GitHub** tab, enter the provided **GitHub username** in the input field, and click on **Sign in with your identity provider** **(2)**.
+
+    - **Email/Username:** <inject key="GitHub User Name" enableCopy="true"/> **(1)**
+
+      ![](../../images/23-7-25-g1.png) 
+
+1. Click on **Continue** on the **Single sign-on to CloudLabs Organizations** page to proceed.
+
+   ![](../../images/23-7-25-g2.png)
+
+1. You'll see the **Sign in** tab. Here, enter your Azure Entra credentials and click **Next (2)**.
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
+
+     ![Enter Your Username](../../images/email.png)
+
+1. Next, provide your Temporary Password and click on **Sign in (2)**
+
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
+
+     ![Enter Your Password](../../images/pass.png)
+
+1. On the **Stay Signed in?** pop-up, click on No.
+
+   ![](../../images/stay.png)
+
+1. On the **Start using Copilot** pop-up appears, click on **X** to close it
+
+    ![](../../images/pop-up.png)
+
+1. You are now successfully logged in to **GitHub** and have been redirected to the **GitHub homepage**.
+
+   ![](../../images/github-homepage.png)
+
+1. In Visual Studio Code, open the `byouc/Agentic_UseCase_Spec.md` template, define your agent use case, and then use GitHub Copilot to scaffold a complete agent MVP based on the completed specification.
+
+   ![](../../images/byouc-Agentic-UseCase-Spec-md.png)
+
+   > **This Specification Template Covers**
+   > 1. **Use Case Summary** — what the agent does and what problem it solves
+   > 2. **Input** — data type, structure, and size
+   > 3. **Agent Steps** — the tools your agent will use (step-by-step)
+   > 4. **Output** — expected format and severity/category levels
+   > 5. **Behavior Rules** — MUST and MUST NOT constraints
+   > 6. **Domain Context** — key terms and agent persona
+   > 7. **Preferences** — Notebook or Web app UI
+   > 8. **Synthetic Data Requirements** — test data spec (Copilot generates the data)
+
+1. For this workshop, you will use the sample **Loan Application Risk Reviewer** agent specification. Review the specification below carefully, as you will use it to generate an implementation plan for the agent in the next task.
+
+   ```
+   ### Use Case Summary
+
+   - **Use case name:** "Loan Application Risk Reviewer"
+   - **What it does:** "Reviews retail/SME loan applications against credit policy and flags exceptions with risk severity and remediation guidance"
+   - **Problem it solves:** "Credit analysts spend 45 min per application manually checking 30+ policy parameters — error rate is 12%"
+
+   ### Input
+
+   - **Input type:** PDF + spreadsheet
+   - **What it looks like:** Loan application form with: applicant details, income docs, CIBIL/credit score, collateral details, existing liabilities, bank statements
+   - **Typical size:** 10–25 pages + 3–6 months statements
+
+   ### Agent Steps
+
+   1. Extract applicant details, income, liabilities, and collateral from the application PDF
+   2. Parse bank statements and compute average monthly balance, salary credits, and EMI outflows
+   3. Calculate key ratios: FOIR (Fixed Obligation to Income Ratio), LTV (Loan-to-Value), DSCR (Debt Service Coverage Ratio)
+   4. Check each parameter against credit policy thresholds (e.g., FOIR ≤ 60%, LTV ≤ 80%)
+   5. Flag policy exceptions with severity (Critical / High / Medium) and cite the specific policy clause
+   6. Generate a risk summary with overall recommendation: Approve / Refer to Credit Committee / Decline
+
+   ### Output
+
+   - **Output format:** Policy exception report: parameter, policy threshold, actual value, breach severity, clause reference. Overall: Approve / Refer / Decline
+   - **Severity levels:** Critical (auto-decline) / High (committee referral) / Medium (waiver possible) / Low (observation)
+
+   ### Agent Behavior Rules
+
+   **MUST:**
+   - Cite the exact credit policy clause number for every exception flagged
+   - Calculate FOIR, LTV, DSCR from source data — never accept pre-calculated values without verification
+   - Flag if total exposure (existing + proposed) exceeds single-borrower limit
+
+   **MUST NOT:**
+   - Make a final credit decision — only recommend (Approve / Refer / Decline)
+   - Ignore missing income documentation — flag as Critical, never infer income
+   - Use external data sources — work only with the provided application package
+
+   ### Domain Context
+
+   - **Key terms:** FOIR, LTV, DSCR, NPA, CIBIL score, EMI, collateral coverage, single-borrower limit
+   - **Agent persona:** "Senior credit analyst with 10 years in retail/SME lending"
+
+   ### Synthetic Data Requirements
+
+   *Example — Loan Application Reviewer:*
+
+   | Attribute | Example Spec |
+   |---|---|
+   | Number of test samples | 1 synthetic loan application (clean / approvable happy-path) |
+   | Required fields / structure | Applicant: name, age, employment type (salaried/self-employed), monthly income, existing debt payments, FICO score (300-850). Loan: amount, tenure, type (home/personal/vehicle). Collateral: type, market value, forced-sale value. Bank statements: 6 months of transactions with salary credits, debt payment debits, average balance. |
+   | Realistic value ranges | Income: $3K-$15K/month. FICO: 670-800 (good), 580-669 (fair), <580 (poor). FOIR threshold: 60%. LTV threshold: 80%. Loan amounts: $50K-$2M. |
+   | Edge cases to include | None for the default sample — keep it a clean happy-path approval. |
+   | File format | JSON or structured dict (simulating parsed PDF output). Bank statements as list of transaction dicts. |
+   ```
 ## Task 4: Explore Use Cases
 
 This workshop features **57 real-world FSI use cases** across all notebooks, demonstrating practical AI agent applications for enterprise banking, insurance, and investment scenarios.
