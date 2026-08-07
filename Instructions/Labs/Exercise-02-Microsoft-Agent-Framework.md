@@ -335,7 +335,17 @@ Context providers observe the agent lifecycle and allow you to:
    - Monitor agent execution and performance using live metrics and traces.
    - Build an observable AI agent using production-ready monitoring practices.
 
-1. Create the Application Insights connection within your Microsoft Foundry resource.
+1. In the **Microsoft Foundry** portal, navigate to the **Manage (1)** tab, select **Connected resources (2)**, and then click **Add connection (3)**.
+
+   ![](../../images/foundry-add-connection.png)
+
+1. On the **Choose a connection** page, select **Application Insights (1)**, and then click **Continue (2)**.
+
+   ![](../../images/foundry-choose-app-insights-connection.png)
+
+1. On the **Create a new connection** page, select your **Application Insights** resource from the dropdown, and then click **Continue**.
+
+   ![](../../images/foundry-select-app-insights-connection.png)
 
 1. In the notebook, select **Select Kernel** from the upper-right corner, and then choose the **Python 3.14.*** kernel.
 
@@ -351,11 +361,21 @@ Context providers observe the agent lifecycle and allow you to:
    - Observe agent execution through live metrics and telemetry data.
    - Implement production-ready observability practices for AI applications.
 
-1. View Traces in Azure Portal:
+1. In the notebook, locate the **Configure Foundry Tracing** cell and note down the **Trace ID**. You will use this Trace ID to view the traces in Azure portal.
 
-   - Go to Azure Portal > Application Insights
-   - Select Investigate > Search
-   - Filter by the Trace ID shown above
+   ![](../../images/1-agent-with-foundry-tracing-trace-id.png)
+
+1. Navigate to Azure portal, enter **Application Insights** in the search bar, and then select **Application Insights** from the search results.
+
+   ![](../../images/az-portal-app-insights-search.png)
+
+1. Select your **Application Insights** resource.
+
+   ![](../../images/az-portal-app-insights-select.png)
+
+1. In the left navigation pane, under **Investigate**, select **Search**, enter the **Trace ID** in the search bar **(1)**, and then select the corresponding agent **Trace (2)** to view the agent traces.
+
+   ![](../../images/az-portal-app-insights-1-trace-id.png)
 
 ### **`agent-framework/observability/2-azure-ai-agent-observability.ipynb`**
 
@@ -385,11 +405,13 @@ Context providers observe the agent lifecycle and allow you to:
    - Monitor agent execution to support troubleshooting and performance analysis.
    - Implement production-ready observability practices for AI-powered customer service applications.
 
-1. View Traces in Azure Portal:
+1. In the notebook, locate the **Run Agent with Observability** cell and note down the **Trace ID**. You will use this Trace ID to view the traces in Azure portal.
 
-   - Go to Azure Portal > Application Insights
-   - Select Investigate > Search
-   - Filter by the Trace ID shown above
+   ![](../../images/2-azure-ai-agent-observability-trace-id.png)
+
+1. Navigate back to your **Application Insights** resource in the Azure portal, enter the **Trace ID** in the search bar **(1)**, and then select the corresponding agent **Trace (2)** to view the agent traces.
+
+   ![](../../images/az-portal-app-insights-2-trace-id.png)
 
 ### 🧠 What are Threads?
 
